@@ -1,9 +1,9 @@
 using Lombiq.VueJs.Services;
 using Microsoft.Extensions.DependencyInjection;
-using OrchardCore.DisplayManagement.Descriptors.ShapeTemplateStrategy;
-using OrchardCore.ResourceManagement;
 using Microsoft.Extensions.Options;
+using OrchardCore.DisplayManagement.Descriptors.ShapeTemplateStrategy;
 using OrchardCore.Modules;
+using OrchardCore.ResourceManagement;
 
 namespace Lombiq.VueJs
 {
