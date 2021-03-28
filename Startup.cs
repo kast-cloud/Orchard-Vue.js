@@ -11,9 +11,8 @@ namespace Lombiq.VueJs
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IConfigureOptions<ResourceManagementOptions>, ResourceManagementOptionsConfiguration>();
-
-            services.AddScoped<IShapeTemplateHarvester, VueComponentTemplateHarvester>();
+            services.AddScoped<IShapeTemplateHarvester, VueComponentTemplateHarvester>();            
+            services.AddScoped<IResourceManifestProvider, ResourceManifest>();
         }
     }
 }
