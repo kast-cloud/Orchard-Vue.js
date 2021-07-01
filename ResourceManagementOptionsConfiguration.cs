@@ -1,5 +1,7 @@
-using Lombiq.VueJs.Constants;
 using Microsoft.Extensions.Options;
+
+using Lombiq.VueJs.Constants;
+
 using OrchardCore.ResourceManagement;
 
 namespace Lombiq.VueJs
@@ -17,7 +19,6 @@ namespace Lombiq.VueJs
                 .DefineScript(ResourceNames.Es6PromisePolyfill)
                 .SetUrl("/Lombiq.VueJs/es6-promise.auto.min.js", "/Lombiq.VueJs/es6-promise.auto.js");
         }
-
         public void Configure(ResourceManagementOptions options)
         {
             options.ResourceManifests.Add(_manifest);
